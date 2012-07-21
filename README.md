@@ -8,4 +8,20 @@ BING_API_KEY=AQi3....kHAyAQ
 
 Substitute your Microsoft BING API key.
 
-I also use this wrapper library in Clojure
+I also use this wrapper library in Clojure:
+
+```clojure
+(ns knowledgespace.engine.search
+  (:import [com.markwatson.search Bing]))
+(use '[clojure.data.json :only (read-json)])
+
+(defn search [query]
+  (read-json (Bing/search query)))
+```
+
+```clojure
+(ns test
+  (:require [knowledgespace.engine.search :as search]))
+
+(println (search/search "parrot"))
+```
