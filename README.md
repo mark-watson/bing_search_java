@@ -1,5 +1,5 @@
-A simple wrapper for the new 2012) Microsoft Bing Web Search API
-================================================================
+A wrapper for the new (2012) Microsoft Bing Web Search API
+==========================================================
 
 You will need an auth token from Microsoft. Currently, 100 searches/day are free.
 ---------------------------------------------------------------------------------
