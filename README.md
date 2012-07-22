@@ -34,7 +34,7 @@ I then include the JAR file in my Clojure project using the kluge I mentioned in
 Another way to integrate this wrapper in a Clojure lein project
 ---------------------------------------------------------------
 
-For lein1 based projects, if I am not making frequent changes to Java code that I use in a Clojure project then I set the Java sorce path in my project.clj file:
+For lein1 based projects, if I am not making frequent changes to Java code that I use in a Clojure project then I set the Java source path in my project.clj file:
 
 ```clojure
    :java-source-path "src/java"
