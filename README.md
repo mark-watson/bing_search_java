@@ -28,3 +28,17 @@ I also use this wrapper library in Clojure:
 
 (println (search/search "parrot"))
 ```
+
+I then include the JAR file in my Clojure project using the kluge I mentioned in a blog article: http://blog.markwatson.com/2012/07/using-new-bing-web-search-api-from-java.html
+
+Another way to integrate this wrapper in a Clojure lein project
+---------------------------------------------------------------
+
+For lein1 based projects, if I am not making frequent changes to Java code that I use in a CLojure project then I set the Java sorce path in my project.clj file:
+
+```clojure
+   :java-source-path "src/java"
+```
+
+and copy my Java code into PROJECT_DIR/src/java/
+
