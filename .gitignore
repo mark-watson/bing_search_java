@@ -3,3 +3,13 @@
 # Package Files #
 *.war
 *.ear
+
+lib/clojure.jar
+.idea/*
+.idea
+
+.DS_Store
+bing_search_java.iml
+
+.idea/ant.xml
+
