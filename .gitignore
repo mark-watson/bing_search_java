@@ -12,4 +12,5 @@ lib/clojure.jar
 bing_search_java.iml
 
 .idea/ant.xml
+.idea
 
