@@ -1,10 +1,11 @@
-A wrapper for the new (2012) Microsoft Bing Web Search and Translate APIs
-=========================================================================
+A wrapper for the new (2012) Microsoft Bing Web Search, Translate and Spelling Correction APIs
+==============================================================================================
+
 
 You will need an auth token from Microsoft for search. Currently, 100 searches/day are free.
 --------------------------------------------------------------------------------------------
 
-I set the following in my environment:
+I set the following in my environment for search and spelling correction:
 
 BING_API_KEY=AQi3....kHAyAQ
 
@@ -16,7 +17,7 @@ BING_API_APP=e12 ..... 413
 
 You can get an App API key at https://datamarket.azure.com/developer/applications/
 
-The free tranlation tier is currently 2 megabytes of translated text per month.
+The free translation tier is currently 2 megabytes of translated text per month.
 
 I also use this wrapper library in Clojure:
 -------------------------------------------
@@ -59,6 +60,13 @@ For lein1 based projects, if I am not making frequent changes to Java code that 
 ```
 
 and copy my Java code into PROJECT_DIR/src/java/
+
+
+## notes for local maven install:
+
+➜  bing_search_java git:(master) ✗ lein localrepo install bing.jar local/bing 0.1.0
+➜  bing_search_java git:(master) ✗ lein localrepo list | grep bing
+local/bing (0.1.0)
 
 
 

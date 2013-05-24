@@ -7,7 +7,7 @@ import com.memetix.mst.language.Language;
 /**
  * author: Mark Watson
  */
-public class Translate {
+public class BingTranslate {
   public static String search(String text, String from_language, String to_language) throws Exception {
     // Set your Windows Azure Marketplace client info - See http://msdn.microsoft.com/en-us/library/hh454950.aspx
     // register application at: https://datamarket.azure.com/developer/applications/
@@ -27,6 +27,11 @@ public class Translate {
     if (to_language.equals("japanese")) to = Language.JAPANESE;
     if (to_language.equals("hungarian")) to = Language.HUNGARIAN;
     if (to_language.equals("spanish")) to = Language.SPANISH;
+    if (to_language.equals("thai")) to = Language.THAI;
+    if (to_language.equals("greek")) to = Language.GREEK;
+    if (to_language.equals("vietnamese")) to = Language.VIETNAMESE;
+    if (to_language.equals("chinese_traditional")) to = Language.CHINESE_TRADITIONAL;
+    if (to_language.equals("portuguese")) to = Language.PORTUGUESE;
     String translatedText = com.memetix.mst.translate.Translate.execute(text, from, to);
 
     System.out.println(translatedText);
