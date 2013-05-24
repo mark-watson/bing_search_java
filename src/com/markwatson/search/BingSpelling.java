@@ -15,7 +15,8 @@ public class BingSpelling {
   public static String spelling(String query) throws Exception {
     String bingUrl = "https://api.datamarket.azure.com/Bing/Search/Composite?Sources=%27Web%2BSpell%27&Query=%27" + java.net.URLEncoder.encode(query) + "%27&$format=JSON";
 
-    String accountKey = System.getenv("BING_API_KEY");
+    String accountKey = System.getenv("BING_SPELLING_KEY");
+    System.out.println("* accountKey = " + accountKey);
     byte[] accountKeyBytes = Base64.encodeBase64((accountKey + ":" + accountKey).getBytes()); // code for encoding found on stackoverflow
     String accountKeyEnc = new String(accountKeyBytes);
 
