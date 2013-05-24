@@ -19,6 +19,9 @@ You can get an App API key at https://datamarket.azure.com/developer/application
 
 The free translation tier is currently 2 megabytes of translated text per month.
 
+I wrote the search and spelling wrappers myself. For translation, I use the wrapper from uses library from:  https://code.google.com/p/microsoft-translator-java-api/
+
+
 I also use this wrapper library in Clojure:
 -------------------------------------------
 
