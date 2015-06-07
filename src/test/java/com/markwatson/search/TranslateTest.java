@@ -1,10 +1,30 @@
+package com.markwatson.search;
+
 import com.markwatson.search.BingTranslate;
 
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Set;
+
 /**
- * author: Mark Watson
+ * Unit test for NLP.
  */
-public class TestTranslate {
-  static public void main(String[] args) throws Exception {
+public class TranslateTest extends TestCase {
+
+  public TranslateTest(String testName) {
+    super(testName);
+  }
+
+  public static Test suite() {
+    return new TestSuite(TranslateTest.class);
+  }
+
+  public void testTrfanslations() throws Exception {
+    assertTrue(true);
     String query = "parrot";
     String json = BingTranslate.search(query, "english", "spanish");
     System.out.println(json);
@@ -17,4 +37,5 @@ public class TestTranslate {
     json = BingTranslate.search("cat", "english", "portuguese");
     System.out.println(json);
   }
+
 }

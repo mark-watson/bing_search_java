@@ -2,22 +2,25 @@ A wrapper for the new (2012) Microsoft Bing Web Search, Translate and Spelling C
 ==============================================================================================
 
 
-You will need an auth token from Microsoft for search. Currently, 100 searches/day are free.
---------------------------------------------------------------------------------------------
+You will need an auth token from Microsoft for search. Currently, 100 searches/day are free. You will need a separate spelling API key if you want to use the spell check wrapper. You will also need an API APP key for translation.
 
-I set the following in my environment for search correction:
+Once you have the environment variables BING_API_KEY and BING_SPELLING_KEY set, try running the "tests":
+
+        mvn clean test
+
+## I set the following in my environment for search:
 
 BING_API_KEY=AQi3....kHAyAQ
 
 Substitute your Microsoft BING API key.
 
-For spelling correction, set:
+## For spelling correction, set:
 
 BING_SPELLING_KEY= pqDGHS...tuYtss=
 
 (again, substitute your key)
 
-For using the translation services you will also need an application key:
+## For using the translation services you will also need an application key:
 
 BING_API_APP=e12 ..... 413
 
