@@ -29,6 +29,10 @@ public class SearchTest extends TestCase {
     String query = "the parot talks a lot";
     String json = BingSearch.search(query);
     System.out.println(json);
+	
+	// results as a List<List<String>>. Inner list contains strings for: title, description, url, date
+	List<List<String>> results = BingSearchJavaResults.search("meyers parrot");
+	System.out.println(results);
   }
 
 }
