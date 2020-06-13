@@ -81,4 +81,6 @@ and copy my Java code into PROJECT_DIR/src/java/
 local/bing (0.1.0)
 
 
+## Donate on Patreon to support all of my projects
 
+Please visit [https://www.patreon.com/markwatson](https://www.patreon.com/markwatson) and sign up to donate $1/month
